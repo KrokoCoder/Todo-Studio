@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html lang = "en">
+        <head>
+            <meta charset = "UTF-08">
+            <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+            <title>nameUrTodo</title>
+            <link href = "{{ url_for('static', filename = 'css/nameUrTodo.css') }}" rel = "stylesheet" type = "text/css">
+            <script src = "{{ url_for('static', filename = 'js/script.js') }}"></script>
+        </head>
+        <body>
+            <div class = "container">
+                <div class = "header">
+                    <h1>Name Ur Todo</h1>
+                </div>
+                <div class = "content">
+                    <div class = "form">
+                        <input type = "text" name = "todoName" id = "todoName" placeholder = "Enter the name of your todo">
+                        <button type = "submit" id = "createTodo">Create</button>
+                      
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>
