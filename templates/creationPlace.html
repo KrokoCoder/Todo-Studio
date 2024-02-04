@@ -1,2 +1,20 @@
 <!DOCTYPE html>
-<html></html>
+<html>
+    <head>
+        <title>createTodo</title>
+        <meta charset = "UTF-08">   
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link href = "{{ url_for('static', filename = 'css/creationPlace.css') }}" rel = "stylesheet" type = "text/css">
+        <script src = "{{ url_for('static', filename = 'js/script.js') }}"></script>
+    </head>
+    <body>
+        <div class = "CreationRoom">
+            <div class = "header">
+                <h1>Todo Factory</h1>
+            </div>
+            <div class = "desciption">
+                <p>Welcome to Todo factory. <br> In this place you can, using actions, make the list of necessary stuff.<br> Max limit of actions: <strong>25</strong>! <br>Use this for your purpose and good luck.</p>
+            </div>
+            <button>&plus; Action</button>
+    </body>
+</html>
