@@ -14,4 +14,14 @@ create.addEventListener("click", function(e){
 }
 
 
-  
+   
+window.onload = function(){{
+    var action  = document.getElementById("NewAction");
+    var add = document.createElement("textarea");
+    add.setAttribute("rows", "4");
+    add.setAttribute("cols", "50");
+    add.id = "action";
+    action.appendChild(add);
+    action.style.marginTop = "50px";
+}
+}
