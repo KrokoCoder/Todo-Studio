@@ -1,3 +1,6 @@
+var todoname;
+
+
 window.onload = function(){
 var todoname = document.getElementById("todoName");
 var create = document.getElementById("createTodo");
@@ -14,14 +17,12 @@ create.addEventListener("click", function(e){
 }
 
 
-   
-window.onload = function(){{
-    var action  = document.getElementById("NewAction");
+window.onload = function() {
+    var action = document.getElementById("NewAction");
     var add = document.createElement("textarea");
     add.setAttribute("rows", "4");
     add.setAttribute("cols", "50");
     add.id = "action";
     action.appendChild(add);
     action.style.marginTop = "50px";
-}
 }

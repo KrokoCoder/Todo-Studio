@@ -1,0 +1,15 @@
+html{
+    background-color: rgb(97, 44, 202);
+}
+h1{
+    background-color: rgb(104, 137, 198);
+}
+p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    
+}
