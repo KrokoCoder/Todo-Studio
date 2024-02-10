@@ -5,9 +5,8 @@
         <meta charset = "UTF-08">   
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <link href = "{{ url_for('static', filename = 'css/creationPlace.css') }}" rel = "stylesheet" type = "text/css">
-        <script src = "{{ url_for('static', filename = 'js/script.js') }}"></script>
     </head>
-    <body>
+    <body id = "b1">
         <div class = "CreationRoom">
             <div class = "header">
                 <h1>Todo Factory</h1>
@@ -18,5 +17,6 @@
             <div class = "PlusAction"> 
                 <button id = "NewAction">&plus; Action</button></div>
            
+        <script src = "{{ url_for('static', filename = 'js/script.js') }}"></script>
     </body>
 </html>
