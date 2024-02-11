@@ -2,7 +2,7 @@ html{
     background-color: rgb(234, 243, 255);
 }
 h1{
-    background-color: rgb(104, 137, 198);
+    background-color: rgb(207, 207, 214);;
 }
 p{
     text-align: center;
@@ -12,14 +12,11 @@ p{
     font-weight: bold;
     margin-top: 30px;
     background-color: rgba(211, 183, 255, 0.24);
-    
 }
-#action{
+#AddAction{
+    margin-top: 30px;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    display:flex;
-}
-#addButton{
-    margin-left: 150px;
+    display:list-item;
 }
