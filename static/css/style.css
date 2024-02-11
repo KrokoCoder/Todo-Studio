@@ -1,15 +1,15 @@
 body {
     margin-top: 45px;
     text-align:center;
-    color:white;
-    background-color: rgb(33, 42, 180);
+    color:rgb(0, 0, 0);
+    background-color: rgb(207, 207, 214);
     width:600px;
     margin-left:550px;
     height: 700px;
     animation-direction: unset;
 }
 html{
-    background-color: rgb(21, 114, 255);
+    background-color: rgb(234, 243, 255);
 }
 .header{
     padding-top: 20px;

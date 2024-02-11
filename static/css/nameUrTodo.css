@@ -1,9 +1,9 @@
 html{
-    background-color: rgb(82, 76, 87);
+    background-color: rgb(234, 243, 255);
     
 }
 body{
-    background-color: rgb(124, 103, 183);
+    background-color: rgb(207, 207, 214);;
     margin-left: 550px;
     margin-top: 175px;
     width: 500px;
@@ -11,9 +11,9 @@ body{
 }
 .header{
     font-size: 18px;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 3px 3px 3px rgb(94, 94, 94);
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-top: 20px;
 }
 #createTodo{

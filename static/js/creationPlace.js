@@ -1,33 +1,33 @@
 // Define the limit of actions
 const limitOfActions = 25;
 let numberOfActions = 0;
+const actions = []; 
+let textarea;// Global array to store actions
 
 function addAction() {
-    const action = document.getElementById("AddAction");
     const textarea = document.createElement("textarea");
-    action.appendChild(textarea);
     textarea.setAttribute("id", "action");
     textarea.value = "Initial content";
     textarea.setAttribute("cols", "50");
+    document.getElementById("AddAction").appendChild(textarea);
+    actions.push(textarea); // Add the textarea to the global array
     numberOfActions++;
 
     if (numberOfActions === limitOfActions) {
         const importantMessage = document.createElement("p");
         importantMessage.innerHTML = "You have reached the limit of actions";
-        // Assuming you have an element with ID "Action1"
-        Action1.appendChild(importantMessage);
+        document.getElementById("AddAction").appendChild(importantMessage);
     }
 }
 
 function removeAction() {
-    const action = document.getElementById("RemoveAction");
     const textarea = document.getElementById("action");
-    Action1.removeChild(textarea);
+    document.getElementById("RemoveAction").removeChild(textarea);
+    actions.pop(); // Remove the last textarea from the global array
     numberOfActions--;
 }
 
 function stopAction() {
-    const action = document.getElementById("StopAction");
     const textarea = document.getElementById("action");
     textarea.disabled = true;
 }
