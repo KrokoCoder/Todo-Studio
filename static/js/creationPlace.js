@@ -26,6 +26,18 @@ function removeAction() {
         numberOfActions--;
     }
 }
+function ClearAllActions(){
+    // Get all elements with the id "action"
+    const elements = document.querySelectorAll("#action");
+
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].remove();
+    }
+
+    // Clear the global array
+    actions.length = 0;
+
+}
 
 
 window.onload = function () {
@@ -33,4 +45,6 @@ window.onload = function () {
     addActionBtn.addEventListener("click", addAction);
     const removeActionBtn = document.getElementById("RemoveAction");
     removeActionBtn.addEventListener("click", removeAction);
+    const clearAllActionsBtn = document.getElementById("Clear-all");
+    clearAllActionsBtn.addEventListener("click", ClearAllActions);
 };
