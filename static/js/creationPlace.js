@@ -9,7 +9,7 @@ function addAction() {
     textarea.setAttribute("id", "action");
     textarea.value = "Initial content";
     textarea.setAttribute("cols", "50");
-    document.getElementById("AddAction").appendChild(textarea);
+    document.getElementById("AddAction").parentElement.appendChild(textarea);
     actions.push(textarea); // Add the textarea to the global array
     numberOfActions++;
 
