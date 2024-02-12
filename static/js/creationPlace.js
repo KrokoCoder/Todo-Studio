@@ -7,36 +7,30 @@ let textarea;// Global array to store actions
 function addAction() {
     const textarea = document.createElement("textarea");
     textarea.setAttribute("id", "action");
-    textarea.value = "Initial content";
+    textarea.setAttribute ("placeholder", "Enter the action");
     textarea.setAttribute("cols", "50");
     document.getElementById("AddAction").parentElement.appendChild(textarea);
     actions.push(textarea); // Add the textarea to the global array
     numberOfActions++;
 
     if (numberOfActions === limitOfActions) {
-        const importantMessage = document.createElement("p");
-        importantMessage.innerHTML = "You have reached the limit of actions";
-        document.getElementById("AddAction").appendChild(importantMessage);
+        alert("You have reached the limit of actions");
+        
     }
 }
 
 function removeAction() {
-    const textarea = document.getElementById("action");
-    document.getElementById("RemoveAction").removeChild(textarea);
-    actions.pop(); // Remove the last textarea from the global array
-    numberOfActions--;
+    if (numberOfActions > 0) {
+        const textarea = actions.pop();
+        textarea.remove();
+        numberOfActions--;
+    }
 }
 
-function stopAction() {
-    const textarea = document.getElementById("action");
-    textarea.disabled = true;
-}
 
 window.onload = function () {
     const addActionBtn = document.getElementById("AddAction");
     addActionBtn.addEventListener("click", addAction);
     const removeActionBtn = document.getElementById("RemoveAction");
     removeActionBtn.addEventListener("click", removeAction);
-    const stopActionBtn = document.getElementById("StopAction");
-    stopActionBtn.addEventListener("click", stopAction);
 };
