@@ -1,15 +1,14 @@
 body {
-    margin-top: 45px;
+    margin-top: 200px;
     text-align:center;
     color:rgb(0, 0, 0);
     background-color: rgb(207, 207, 214);
-    width:600px;
-    margin-left:550px;
-    height: 700px;
-    animation-direction: unset;
+    width:700px;
+    margin-left:800px;
+    height: 800px;
 }
 html{
-    background-color: rgb(234, 243, 255);
+    background-color: rgb(23, 123, 255);
 }
 .header{
     padding-top: 20px;
@@ -17,9 +16,10 @@ html{
     font-size: 28px;
 }
 #NewTodo{
-    margin-top: 100px;
+    margin-top: 450px;
     width:250px;
     height: 75px;
     font-size: 30px;
     font-weight: bold;
+    border-radius: 1px;;
 }
