@@ -38,6 +38,21 @@ function ClearAllActions(){
     actions.length = 0;
 
 }
+function DownloadTodo(){
+    // Get all elements with the id "action"
+    const elements = document.querySelectorAll("#action");
+    let text = "";
+    for (let i = 0; i < elements.length; i++) {
+        text += elements[i].value + "\n";
+    }
+    const blob = new Blob([text], {type: "text/plain"});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "todo.txt";
+    a.click();
+    URL.revokeObjectURL(url);
+}
 
 
 window.onload = function () {
@@ -47,4 +62,6 @@ window.onload = function () {
     removeActionBtn.addEventListener("click", removeAction);
     const clearAllActionsBtn = document.getElementById("Clear-all");
     clearAllActionsBtn.addEventListener("click", ClearAllActions);
+    const downloadTodoBtn = document.getElementById("Download");
+    downloadTodoBtn.addEventListener("click", DownloadTodo);
 };
