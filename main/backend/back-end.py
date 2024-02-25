@@ -29,18 +29,7 @@ def nameUrTodo():
 
 # The converter will first get the normal image, then grayscale it, then erase all pieces that are entirely white, then convert it to a 1-bit image (black), and then save it as a .cebt file (basically PNG but with a different extension)
 @app.route('/converter', methods=['GET', 'POST'])
-def nameUrTodo():
-    if request.method == 'POST':
-        # Get the image from the form
-        todo = request.files['Todo']
-        # Create the directory if it doesn't exist
-        os.makedirs('main/backend', exist_ok=True)
-        # Save the image to the server
-        todo.save('main/backend/todo.txt')
-        
-@app.route('/nameTodo')
-def main1():
-    return render_template('nameUrTodo.html')
+
 
 
 def createTodo():
