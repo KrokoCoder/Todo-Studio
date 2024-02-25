@@ -27,6 +27,29 @@
            <div class = "SaveDownload">
                 <button id = "Download">Download</button> 
            </div>
+           <a href = "https://organic-space-fiesta-jxx565q7x6wf549j-2024.app.github.dev/index"><button><strong>&larr;</strong></button></a>
+            <div class = "container">
+                <div class = "header">
+                    <h1>Name Ur Todo</h1>
+                </div>
+                <div class = "content">
+                    <div class = "form">
+                        <form id="searchform" action="" method="GET">
+                          <input id="intextbox" maxlength="150" size="20" value="" name="q" type="text" placeholder="Insert your keyword here.." onchange="changename ()">                            
+                        </form>
+                                              
+                        <script>
+                          function changename () {
+                            var name = document.getElementById ("intextbox").value;
+                            document.getElementById ("intextbox").name = name;
+                            document.getElementById ("title").innerHTML = name;
+                          }
+                        </script>
+                        <a href = "https://organic-space-fiesta-jxx565q7x6wf549j-2024.app.github.dev/createTodo"><button type = "submit" id = "createTodo">Create</button></a>                      
+                      </div>
+                      
+                </div>
+            </div>
         <script src = "{{ url_for('static', filename = 'js/creationPlace.js') }}"></script>
     </body>
 </html>
