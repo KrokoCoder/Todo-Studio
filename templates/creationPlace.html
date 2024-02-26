@@ -17,17 +17,6 @@
                 <p>Welcome to Todo factory. <br> In this place you can, using actions, make the list of necessary stuff.<br> Max limit of actions: <strong>25</strong>! <br>Use this for your purpose and good luck.</p>
             </div>
             <hr>
-            <div class = "PlusAction"> 
-                <button id = "AddAction">Add</button>
-                <button id = "RemoveAction">Remove</button>
-                <button id = "Clear-all">ToTrash</button>
-                
-            </div>
-                
-           <div class = "SaveDownload">
-                <button id = "Download">Download</button> 
-           </div>
-          
             <div class = "container">
                 <div class = "header">
                     <h1>Name Ur Todo</h1>
@@ -42,6 +31,18 @@
                       </div>
                 </div>
             </div>
+            <div class = "PlusAction"> 
+                <button id = "AddAction">Add</button>
+                <button id = "RemoveAction">Remove</button>
+                <button id = "Clear-all">ToTrash</button>
+                
+            </div>
+                
+           <div class = "SaveDownload">
+                <button id = "Download">Download</button> 
+           </div>
+          
+            
         <script src = "{{ url_for('static', filename = 'js/creationPlace.js') }}"></script>
     </body>
 </html>

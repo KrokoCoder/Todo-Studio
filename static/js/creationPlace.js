@@ -38,21 +38,7 @@ function ClearAllActions(){
     actions.length = 0;
 
 }
-function DownloadTodo(){
-    // Get all elements with the id "action"
-    const elements = document.querySelectorAll("#action");
-    let text = "";
-    for (let i = 0; i < elements.length; i++) {
-        text += elements[i].value + "\n";
-    }
-    const blob = new Blob([text], {type: "text/plain"});
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "todo.txt";
-    a.click();
-    URL.revokeObjectURL(url);
-}
+
 function changename () {
     var name = document.getElementById ("intextbox").value;
     document.getElementById ("intextbox").name = name;
@@ -63,7 +49,23 @@ function saveUrName(){
     document.getElementById ("intextbox").name = name;
     document.createElement("title").innerHTML = name;
 }
-
+function DownloadTodo(){
+    var name = document.getElementById ("intextbox").value;
+    document.getElementById ("intextbox").name = name;
+    // Get all elements with the id "action"
+    const elements = document.querySelectorAll("#action");
+    let text = "";
+    for (let i = 0; i < elements.length; i++) {
+        text += elements[i].value + "\n";
+    }
+    const blob = new Blob([text], {type: "text/plain"});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = ""+{name}+".txt";
+    a.click();
+    URL.revokeObjectURL(url);
+}
 window.onload = function () {
     const addActionBtn = document.getElementById("AddAction");
     addActionBtn.addEventListener("click", addAction);

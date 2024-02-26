@@ -13,6 +13,9 @@ p{
     margin-top: 30px;
     background-color: rgba(211, 183, 255, 0.24);
 }
+.PlusAction{
+    margin-left: 20px;
+}
 #AddAction{
     margin-top: 30px;
     font-size: 20px;
@@ -32,6 +35,7 @@ p{
     font-weight: bold;
 }
 #Download{
+    margin-left: 20px;
     margin-top: 30px;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -43,8 +47,11 @@ p{
 #IMP{
     margin-right: 500px;
 }
-
+.container{
+    margin-left: 1500px;;
+}
 .header{
+    
     font-size: 18px;
     text-shadow: 3px 3px 3px rgb(94, 94, 94);
     font-weight: bold;
