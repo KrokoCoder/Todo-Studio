@@ -24,11 +24,7 @@ def TodoMaker():
 def main():
     return render_template('index.html')
 
-def nameUrTodo():
-    return render_template("nameUrTodo.html")
 
-# The converter will first get the normal image, then grayscale it, then erase all pieces that are entirely white, then convert it to a 1-bit image (black), and then save it as a .cebt file (basically PNG but with a different extension)
-@app.route('/converter', methods=['GET', 'POST'])
 
 
 

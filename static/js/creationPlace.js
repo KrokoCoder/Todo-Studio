@@ -53,7 +53,16 @@ function DownloadTodo(){
     a.click();
     URL.revokeObjectURL(url);
 }
-
+function changename () {
+    var name = document.getElementById ("intextbox").value;
+    document.getElementById ("intextbox").name = name;
+    document.getElementById ("title").innerHTML = name;
+  }
+function saveUrName(){
+    var name = document.getElementById ("intextbox").value;
+    document.getElementById ("intextbox").name = name;
+    document.createElement("title").innerHTML = name;
+}
 
 window.onload = function () {
     const addActionBtn = document.getElementById("AddAction");

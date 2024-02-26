@@ -7,7 +7,7 @@
         <link href = "{{ url_for('static', filename = 'css/creationPlace.css') }}" rel = "stylesheet" type = "text/css">
     </head>
     <body id = "b1">
-        <div><a href = "https://organic-space-fiesta-jxx565q7x6wf549j-2024.app.github.dev/nameTodo"><button><strong>&larr;</strong></button></a></div>
+        <div><a href = "https://organic-space-fiesta-jxx565q7x6wf549j-2024.app.github.dev/index"><button><strong>&larr;</strong></button></a></div>
        
         <div class = "CreationRoom">
             <div class = "header">
@@ -27,7 +27,7 @@
            <div class = "SaveDownload">
                 <button id = "Download">Download</button> 
            </div>
-           <a href = "https://organic-space-fiesta-jxx565q7x6wf549j-2024.app.github.dev/index"><button><strong>&larr;</strong></button></a>
+          
             <div class = "container">
                 <div class = "header">
                     <h1>Name Ur Todo</h1>
@@ -38,16 +38,8 @@
                           <input id="intextbox" maxlength="150" size="20" value="" name="q" type="text" placeholder="Insert your keyword here.." onchange="changename ()">                            
                         </form>
                                               
-                        <script>
-                          function changename () {
-                            var name = document.getElementById ("intextbox").value;
-                            document.getElementById ("intextbox").name = name;
-                            document.getElementById ("title").innerHTML = name;
-                          }
-                        </script>
-                        <a href = "https://organic-space-fiesta-jxx565q7x6wf549j-2024.app.github.dev/createTodo"><button type = "submit" id = "createTodo">Create</button></a>                      
+                        <button id = "saveUrName">Save the name</button>                  
                       </div>
-                      
                 </div>
             </div>
         <script src = "{{ url_for('static', filename = 'js/creationPlace.js') }}"></script>
